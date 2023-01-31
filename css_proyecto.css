@@ -1,0 +1,16 @@
+header{
+    background-color: blueviolet;
+}
+#divlog {
+    float: left;
+}
+#divmen{
+    float: right;
+    color: black;
+    list-style-type: none;
+    display: inline;
+    font-size: 1.3em;
+}
+li{
+    display: inline;
+}
