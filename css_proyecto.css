@@ -23,16 +23,19 @@ header {
     margin-top: 55px;
     margin-right: 15px;
 }
+
 main {
     height: 800px;
     background-image: url(fondo.png);
 }
-img{
-    float:right;
+
+img {
+    float: right;
     margin-right: 20%;
 
 }
-#nuevo{
+
+#nuevo {
     font-size: 1.5em;
     background-color: blueviolet;
     color: white;
@@ -44,12 +47,21 @@ img{
     border-radius: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-footer{
+
+#tabla {
+    
+}
+table{
+    
+}
+
+footer {
     color: white;
     background: rgb(71, 10, 78);
     background: linear-gradient(90deg, rgba(71, 10, 78, 1) 16%, rgba(56, 11, 122, 1) 86%);
 }
-#footerinfo{
+
+#footerinfo {
     margin: auto;
 }
 
@@ -59,7 +71,7 @@ li {
 }
 
 a {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-decoration: none;
 }
