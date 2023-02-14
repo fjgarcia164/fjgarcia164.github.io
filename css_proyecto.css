@@ -1,5 +1,6 @@
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -10,6 +11,7 @@ header {
 
 #divlog {
     float: left;
+    margin-left: 40px;
 }
 
 #divmen {
@@ -22,11 +24,25 @@ header {
     margin-right: 15px;
 }
 main {
-    height: 1000px;
+    height: 800px;
     background-image: url(fondo.png);
 }
-#divmain{
+img{
+    float:right;
+    margin-right: 20%;
+
+}
+#nuevo{
+    font-size: 1.5em;
+    background-color: blueviolet;
     color: white;
+    padding: 10px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 400px;
+    border-radius: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 footer{
     color: white;
