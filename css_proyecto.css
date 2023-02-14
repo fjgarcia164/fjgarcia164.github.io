@@ -42,17 +42,17 @@ img {
     padding: 10px;
     float: left;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 11%;
     width: 400px;
     border-radius: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #tabla {
-    
+    margin: auto;
 }
 table{
-    
+    margin: auto;
 }
 
 footer {
