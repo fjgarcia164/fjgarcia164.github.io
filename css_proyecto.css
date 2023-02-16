@@ -49,9 +49,22 @@ img {
 }
 
 #tabla {
+    color: white;
     margin: auto;
+    
+}
+#tabla img{
+    
+    width: 230px;
+    height: 200px;
+    display: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 table{
+    
+    text-align: center;
+    color: white;
     margin: auto;
 }
 
