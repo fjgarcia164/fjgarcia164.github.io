@@ -48,25 +48,6 @@ img {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#tabla {
-    color: white;
-    margin: auto;
-    
-}
-#tabla img{
-    
-    width: 230px;
-    height: 200px;
-    display: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-table{
-    
-    text-align: center;
-    color: white;
-    margin: auto;
-}
 
 footer {
     color: white;
@@ -88,3 +69,22 @@ a {
     color: white;
     text-decoration: none;
 }
+.grid-container{
+    text-align: center;
+    font-size: 1.2em;
+   color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+    padding: 20px;
+  }
+.grid-item:hover{
+filter: opacity(0.9);
+transform: scale(1.08);
+  }
+  .img{
+    width: 200px;
+    height: 200px;
+  }
+ 
