@@ -90,6 +90,8 @@ h2 {
     gap: 10px;
     padding: 20px;
     margin-top: 50px;
+    place-content: center;
+
   }
   
   
