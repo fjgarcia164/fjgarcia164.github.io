@@ -1,0 +1,568 @@
+:root {
+    --bg-dark: #0a0a0a;
+    --text-white: #ffffff;
+    --accent-brown: #2d1e15;
+    --glass-white: rgba(255, 255, 255, 0.1);
+    --font-main: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo img {
+    margin-top: 5%;
+    height: auto;
+
+    width: clamp(15.625rem, 20vw, 18.75rem);
+
+}
+
+/* NAV */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #888;
+}
+
+/* HAMBURGUESA */
+#menu-check {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* HEADLINER  */
+
+.headliner-mission {
+    margin-top: 10rem;
+    position: relative;
+    height: 70vh;
+    background-image: url('../imgs/tour.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headliner-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.mission-label {
+    font-family: monospace;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.blink-dot {
+    color: #ff0000;
+    animation: blink 1s infinite;
+}
+
+.mission-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    letter-spacing: -4px;
+    color: #fff;
+    line-height: 0.9;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.mission-countdown {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+}
+
+.countdown-block span {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 700;
+    display: block;
+    color: #fff;
+}
+
+.countdown-block p {
+    font-size: 0.6rem;
+    color: #666;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+}
+
+.countdown-separator {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 300;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+/* TOURS */
+.tour-list-container {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 5%;
+}
+
+.list-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-header {
+    display: grid;
+    grid-template-columns: 100px 1.2fr 1fr 200px 180px;
+    padding: 1.5rem 2rem;
+    font-size: 0.6rem;
+    color: #444;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #222;
+}
+
+.tour-row {
+    display: grid;
+    grid-template-columns: 100px 1.2fr 1fr 200px 180px;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #111;
+    transition: background 0.3s ease;
+}
+
+.tour-row:hover {
+    background: #050505;
+}
+
+.col-date .day {
+    font-size: 2.5rem;
+    font-weight: 900;
+    display: block;
+    line-height: 1;
+}
+
+.col-date .month {
+    font-size: 0.8rem;
+    color: #666;
+    letter-spacing: 2px;
+}
+
+.col-location h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.col-venue p {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.btn-ticket {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-ticket:hover {
+    background: #fff;
+    color: #000;
+}
+
+.status-badge {
+    color: #ff0000;
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    border: 1px solid #ff0000;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.tour-row.is-sold-out {
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+
+.col-map {
+    overflow: hidden;
+    line-height: 0;
+    padding: 0.8rem 1.5rem;
+}
+
+
+/* CALENDAR */
+
+.footer-mission-control {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-top: 1px solid #222;
+}
+
+.box-transmission,
+.box-calendar {
+    flex: 1;
+    min-width: 300px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+p {
+    color: #888;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+
+.simple-form input {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.simple-form button {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.simple-form button:hover {
+    background: #ff0000;
+    color: #fff;
+}
+
+.status-terminal {
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: #444;
+}
+
+.tour-calendar {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.tour-calendar th,
+.tour-calendar td {
+    border: 1px solid #222;
+    padding: 15px;
+    text-align: center;
+}
+
+.tour-calendar th {
+    background: #111;
+    color: #666;
+    font-size: 0.7rem;
+}
+
+.show-day {
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.show-day:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.legend {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.7rem;
+    color: #555;
+    font-style: italic;
+}
+
+/*FOOTER*/
+
+.main-footer {
+    background-color: var(--bg-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5rem 5% 2rem 5%;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.footer-brand,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 15.625rem;
+}
+
+.footer-brand h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.main-footer h3 {
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a,
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+    opacity: 0.5;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-bottom {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.65rem;
+    color: #444;
+    letter-spacing: 0.1rem;
+}
+
+
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: var(--glass-white);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    z-index: 2000;
+    transition: 0.3s;
+}
+
+.scroll-top:hover {
+    background: white;
+    color: black;
+}
+
+
+
+@media (max-width: 770px) {
+    .footer-mission-control {
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .mission-countdown {
+        gap: 0.5rem;
+    }
+
+    .countdown-separator {
+        display: none;
+    }
+
+    .main-footer {
+        padding: 3rem 5%;
+        text-align: center;
+    }
+
+    .footer-container {
+        justify-content: center;
+    }
+
+    .social-icons {
+        align-items: center;
+    }
+
+    .tour-row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 990px) {
+
+    .tour-row,
+    .list-header {
+        grid-template-columns: 100px 1fr 1fr;
+    }
+
+    .col-action {
+        grid-column: 1 / -1;
+        margin-top: 1.5rem;
+    }
+
+    .list-header {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 830px) {
+
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        padding: 3rem;
+        gap: 2rem;
+        border-bottom: 1px solid #333;
+    }
+
+    #menu-check:checked~nav .nav-links {
+        display: flex;
+    }
+
+
+}

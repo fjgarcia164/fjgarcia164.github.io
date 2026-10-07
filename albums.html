@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/albums.css">
+    <title>Albums</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="./assets/imgs/logo21.png" alt="Travis Scott Logo">
+        </div>
+
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./Index.html">HOME</a></li>
+                <li><a href="./bio.html">BIOGRAPHY</a></li>
+                <li><a href="./albums.html">ALBUMS</a></li>
+                <li><a href="./tours.html">TOURS</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sub-hero" id="album-header">
+        <div class="sub-hero-overlay"></div>
+        <div class="sub-hero-content">
+            <h1 class="outline-text">ALBUMS</h1>
+            <p class="sub-title">THE COSMOS OF JAYLEN VOSS</p>
+        </div>
+    </section>
+
+
+
+    <section class="featured-album">
+        <div class="featured-container">
+
+            <div class="featured-art">
+                <div class="badge">LATEST RECORD</div>
+                <img src="./assets/imgs/album21.jfif" alt="Days Before Rodeo Album Cover">
+                <div class="album-title-overlay">DAYS BEFORE RODEO</div>
+            </div>
+
+            <div class="featured-content">
+                <div class="meta-info">
+                    <span class="cat-number">Cat No: CAT-VOSS-2026-01</span>
+                    <p class="album-description">
+                        A cinematic journey exploring human emotion and industrial decay.
+                        The definitive sound of the Astraea era.
+                    </p>
+                </div>
+
+                <div class="player-wrapper">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/54Y471E7GNBSOXjZtqONId?utm_source=generator&theme=0"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="archive-section">
+        <div class="archive-header">
+            <h2>THE ARCHIVE</h2>
+        </div>
+
+        <div class="archive-grid">
+            <div class="album-item" id="album-utopia">
+                <div class="album-card">
+                    <img src="./assets/imgs/utopia.jpg" alt="Utopia">
+                    <div class="card-info">
+                        <h4>UTOPIA</h4>
+                        <span>2023</span>
+                        <button class="btn-listen" onclick="toggleDetails('details-utopia')">LISTEN</button>
+                    </div>
+                </div>
+                <div id="details-utopia" class="album-expanded-panel">
+                    <div class="expanded-content">
+                        <div class="expanded-art">
+                            <img src="./assets/imgs/utopia.jpg" alt="Utopia">
+                        </div>
+                        <div class="expanded-info">
+                            <h3>UTOPIA</h3>
+                            <p>A journey through a dystopian soundscape. Featuring collaborative tracks with Beyoncé,
+                                Drake, and Playboi Carti.</p>
+                            <div class="spotify-container">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/album/18NOKLkZETa4sWwLMIm0UZ?utm_source=generator"
+                                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <button class="btn-close" onclick="toggleDetails('details-utopia')">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-item" id="album-astroworld">
+                <div class="album-card">
+                    <img src="./assets/imgs/maxresdefault.jpg" alt="Astroworld">
+                    <div class="card-info">
+                        <h4>ASTROWORLD</h4>
+                        <span>2018</span>
+                        <button class="btn-listen" onclick="toggleDetails('details-astro')">LISTEN</button>
+                    </div>
+                </div>
+                <div id="details-astro" class="album-expanded-panel">
+                    <div class="expanded-content">
+                        <div class="expanded-art">
+                            <img src="./assets/imgs/maxresdefault.jpg" alt="Astroworld">
+                        </div>
+                        <div class="expanded-info">
+                            <h3>ASTROWORLD</h3>
+                            <p>A psychedelic amusement park of sounds. The album that defined a generation of trap
+                                music.</p>
+                            <div class="spotify-container">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/album/41GuZcammIkupMPKH2OJ6I?utm_source=generator"
+                                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <button class="btn-close" onclick="toggleDetails('details-astro')">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-item" id="album-rodeo">
+                <div class="album-card">
+                    <img src="./assets/imgs/rodeo.jpg" alt="Rodeo">
+                    <div class="card-info">
+                        <h4>RODEO</h4>
+                        <span>2015</span>
+                        <button class="btn-listen" onclick="toggleDetails('details-rodeo')">LISTEN</button>
+                    </div>
+                </div>
+                <div id="details-rodeo" class="album-expanded-panel">
+                    <div class="expanded-content">
+                        <div class="expanded-art">
+                            <img src="./assets/imgs/rodeo.jpg" alt="Rodeo">
+                        </div>
+                        <div class="expanded-info">
+                            <h3>RODEO</h3>
+                            <p>The debut masterpiece. A dark, storytelling-heavy exploration of Scott's rise to the top.
+                            </p>
+                            <div class="spotify-container">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/album/4PWBTB6NYSKQwfo79I3prg?utm_source=generator"
+                                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <button class="btn-close" onclick="toggleDetails('details-rodeo')">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-item" id="album-jack">
+                <div class="album-card">
+                    <img src="./assets/imgs/jack.jpg" alt="jack">
+                    <div class="card-info">
+                        <h4>JACKBOYS</h4>
+                        <span>2015</span>
+                        <button class="btn-listen" onclick="toggleDetails('details-jack')">LISTEN</button>
+                    </div>
+                </div>
+                <div id="details-jack" class="album-expanded-panel">
+                    <div class="expanded-content">
+                        <div class="expanded-art">
+                            <img src="./assets/imgs/jack.jpg" alt="jack">
+                        </div>
+                        <div class="expanded-info">
+                            <h3>JACKBOYS</h3>
+                            <p>A high-octane collective showcase defining the intersection of luxury street culture and
+                                industrial trap music.
+                            </p>
+                            <div class="spotify-container">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/album/1Sf8GsXG32t0jNrX11xqWx?utm_source=generator"
+                                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <button class="btn-close" onclick="toggleDetails('details-jack')">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="album-item" id="album-jack2">
+                <div class="album-card">
+                    <img src="./assets/imgs/jack2.jpg" alt="jack">
+                    <div class="card-info">
+                        <h4>JACKBOYS 2</h4>
+                        <span>2025</span>
+                        <button class="btn-listen" onclick="toggleDetails('details-jack2')">LISTEN</button>
+                    </div>
+                </div>
+                <div id="details-jack2" class="album-expanded-panel">
+                    <div class="expanded-content">
+                        <div class="expanded-art">
+                            <img src="./assets/imgs/jack2.jpg" alt="jack">
+                        </div>
+                        <div class="expanded-info">
+                            <h3>JACKBOYS 2</h3>
+                            <p>The cinematic evolution of the pack, pushing collaborative boundaries into a darker and
+                                more refined industrial soundscape.
+                            </p>
+                            <div class="spotify-container">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/album/32lGAqeVkdJxEj2iv2Q01B?utm_source=generator"
+                                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <button class="btn-close" onclick="toggleDetails('details-jack2')">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="album-item" id="album-jack3">
+                <div class="album-card">
+                    <img src="./assets/imgs/jack3.jpg" alt="jack">
+                    <div class="card-info">
+                        <h4>The Jack Webster Project</h4>
+                        <span>2023</span>
+                        <button class="btn-listen" onclick="toggleDetails('details-jack3')">LISTEN</button>
+                    </div>
+                </div>
+                <div id="details-jack3" class="album-expanded-panel">
+                    <div class="expanded-content">
+                        <div class="expanded-art">
+                            <img src="./assets/imgs/jack3.jpg" alt="jack">
+                        </div>
+                        <div class="expanded-info">
+                            <h3>The Jack Webster Project</h3>
+                            <p>TAn intimate and raw exploration of the man behind the vision, blending minimalist
+                                production with unfiltered artistic honesty.
+                            </p>
+                            <div class="spotify-container">
+                                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/album/0YHrbuyYotxwsS5Q90n922?utm_source=generator"
+                                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <button class="btn-close" onclick="toggleDetails('details-jack3')">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="career-metrics">
+        <div class="metrics-header">
+            <span class="label">GLOBAL IMPACT</span>
+            <h2>SONIC METRICS</h2>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-box">
+                <span class="number">63B+</span>
+                <span class="desc">TOTAL GLOBAL STREAMS</span>
+            </div>
+
+            <div class="metric-box">
+                <span class="number">55</span>
+                <span class="desc">MULTI-PLATINUM AWARDS</span>
+            </div>
+
+            <div class="metric-box">
+                <span class="number">65M</span>
+                <span class="desc">MONTHLY LISTENERS (AVG)</span>
+            </div>
+
+            <div class="metric-box">
+                <span class="number">#1</span>
+                <span class="desc">BILLBOARD 200 PEAK</span>
+            </div>
+        </div>
+
+        <div class="collaborators-wall">
+            <div class="wall-label">KEY ARCHITECTS & COLLABORATORS</div>
+            <div class="names-scroll">
+                <span>MIKE DEAN</span> / <span>METRO BOOMIN</span> / <span>DRAKE</span> / <span>THE WEEKND</span> /
+                <span>KANYE WEST</span> / <span>WONDAGURL</span> / <span>DON TOLIVER</span> / <span>SZA</span>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="logo">CACTUS JACK</h2>
+                <p>ASTRAEA WORLDWIDE © 2026</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>NAVIGATION</h3>
+                <ul>
+                    <li><a href="./Index.html">HOME</a></li>
+                    <li><a href="./bio.html">BIOGRAPHY</a></li>
+                    <li><a href="./albums.html">ALBUMS</a></li>
+                    <li><a href="./tours.html">TOURS</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>SOCIALS</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" rel="noopener">INSTAGRAM</a>
+                    <a href="#" target="_blank" rel="noopener">TWITTER</a>
+                    <a href="#" target="_blank" rel="noopener">SPOTIFY</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>DESIGNED FOR THE UTOPIA. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <a href="#top" class="scroll-top">
+        <span>↑</span>
+    </a>
+    <script src="./assets/js/albums.js"></script>
+</body>
+
+</html>
